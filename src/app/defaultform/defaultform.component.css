@@ -1,0 +1,13 @@
+.container {
+    width: 450px;
+    font-size: 15px;
+}
+.shift{
+    position: absolute;
+    left: 400px;
+    top: 328px;
+}
+.btn{
+    background-color:green;
+}
+

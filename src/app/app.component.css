@@ -1,0 +1,13 @@
+.req{
+    color: black;
+    position: absolute;
+    left: 40px;
+    font-size: 20px;
+   
+    
+}
+.req1{
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+}

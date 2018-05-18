@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="jumbotron">
+      <form #frm="ngForm" (ngSubmit)="addproject(frm)" >
+          Project Name:
+          <div>
+            <input type="text" name="project" placeholder="Type Here" ngModel>
+          </div> 
+           <br> Customer Drawing Revision Number:
+          <div>
+            <input type="text" name="revisionNumber" placeholder="Type Here" ngModel >
+          </div>
+         
+          <br> Customer Drawing:
+          <div>
+           <input type="text" name="drawing" placeholder="type url here" ngModel><span class="glyphicon glyphicon-paperclip"></span>
+          </div>
+    <br>
+          <div>
+           <button type="submit" name="button" class="btn">add project</button>
+          </div>
+          <div class="shift">
+              <button (click)="postnewproject()" type="submit" name="close" >Close</button>
+          </div>
+        
+        </form>
+  
+  </div>
+  </div>
+  {{frm.value | json}}
