@@ -12,8 +12,9 @@ export class RunningprojectComponent implements OnInit {
 
   ngOnInit() {
   
-   this.newservice.fetchdata().subscribe(function(data){
-    this.projectdata = data;
-  });
+  //  this.newservice.fetchdata().subscribe(function(data){
+  //   this.projectdata = data;
+  // });
 }
+
 }

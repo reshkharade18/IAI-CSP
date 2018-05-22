@@ -1,5 +1,6 @@
 
-<app-component-dashboard></app-component-dashboard>    
+<app-component-dashboard></app-component-dashboard>  
+<app-development (rank)="getindex($event)"></app-development>  
 
 <div class="req" style="width:30%">
         <ul>
@@ -9,11 +10,11 @@
                 </ul>
         <router-outlet><a></a></router-outlet>
 </div>
-<div class="req1" style="width:70%">
-        <a routerLink="/development/defaultform"></a>
-        <router-outlet><a></a></router-outlet>
+<div>
+        <app-development (rank)="displayList($event)"></app-development>  
+<div class="req1" style="width:70%" ng-model="rank" *ngIf="rank==0">
+        <app-defaultform ></app-defaultform>
+    </div>
 </div>
 
-<br>
 
-<br>

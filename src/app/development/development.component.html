@@ -1,27 +1,8 @@
 <div class="alighment">
-<input type="button" value="Initial Data ">
-<br>
-<br>
-<input type="button" value="Feasibility Report ">
-<br>
-<br>
-<input type="button" value="Dev Trial ">
-<br>
-<br>
-<input type="button" value="HT Process ">
-<br>
-<br>
-<input type="button" value="Fatigue Testing ">
-<br>
-<br>
-<input type="button" value="submit & cust. Feedback ">
-<br>
-<br>
-<input type="button" value="PTR ">
-<br>
-<br>
-<input type="button" value="PTR close point ">
-<br>
-<br>
-<input type="button" value="SOP ">
+<div>
+        <button type="button" *ngFor="let i of devData;let ind=index" (click)="getindex(ind)" > {{i.stage}}</button>
+           <br><br>
+</div>
+<div class="req1" style="width:70%" ng-model="rank" *ngIf="rank==0">
+    <app-defaultform ></app-defaultform>
 </div>

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  position:number;
+  displayList=function(data){
+  this.position=data;
+  };
 }
