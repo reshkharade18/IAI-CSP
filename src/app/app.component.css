@@ -2,12 +2,15 @@
     color: black;
     position: absolute;
     left: 40px;
-    font-size: 20px;
+    font-size: 16px;
    
     
 }
 .req1{
     color: black;
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
+}
+.random{
+    margin-top: 150px;
 }

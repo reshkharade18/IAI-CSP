@@ -1,8 +1,12 @@
 <div class="alighment">
-<div>
-        <button type="button" *ngFor="let i of devData;let ind=index" (click)="getindex(ind)" > {{i.stage}}</button>
-           <br><br>
-</div>
-<div class="req1" style="width:70%" ng-model="rank" *ngIf="rank==0">
-    <app-defaultform ></app-defaultform>
-</div>
+  <div>
+    <button type="button" class="btn btn-primary" [ngClass]="{disabled:!i.enabled}"  *ngFor="let i of devData;let ind=index" (click)="getindex(ind)"> {{i.stage}}</button>
+    <br>
+    <br>
+  </div >
+  <div class="side" *ngIf="rank==0">
+    <app-defaultform (messageEvent)="receivemessage($event)" [childMessage]="parentMessage" ></app-defaultform>
+  </div>
+  
+  
+  

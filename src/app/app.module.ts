@@ -4,6 +4,9 @@ import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
+// import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+// import {MenuItem} from 'primeng/api';  
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
