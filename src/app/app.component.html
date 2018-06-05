@@ -1,20 +1,15 @@
+<app-component-dashboard></app-component-dashboard>
 
-<app-component-dashboard></app-component-dashboard>  
-<app-development (rank)="getindex($event)"></app-development>  
 
-<div class="req" style="width:30%">
-        <ul>
-                <li  ><a routerLink="/development"  >New Requiry</a></li>
-                <br>
-                <li><a routerLink="/runningproject">Running Project</a></li>
-                </ul>
-        <router-outlet><a></a></router-outlet>
+<div class="req" style="width:60%">
+  <ul>
+    <li>
+      <a routerLink="/development">New Requiry</a>
+    </li>
+    <br>
+    <li>
+      <a routerLink="/runningproject">Running Project</a>
+    </li>
+  </ul>
+  <router-outlet><a></a>  </router-outlet>
 </div>
-<div>
-        <app-development (rank)="displayList($event)"></app-development>  
-<div class="req1" style="width:70%" ng-model="rank" *ngIf="rank==0">
-        <app-defaultform ></app-defaultform>
-    </div>
-</div>
-
-

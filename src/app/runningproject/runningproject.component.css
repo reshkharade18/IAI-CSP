@@ -1,6 +1,7 @@
 .run{
     position: absolute;
-    left: 80%;
+    left: 10%;
     font-size: 12px;
     color: black;
+    display: inline;
 }
