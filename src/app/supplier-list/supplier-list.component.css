@@ -1,0 +1,22 @@
+.pagination{
+    
+}
+.active{ 
+    
+}
+.container{
+    width: 270px;
+    height: 190px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    border-color: black;
+    border: 1px solid;
+    padding: 10px;
+}
+.table-bordered{
+    border: 1px solid black;
+}
+tr{
+    height:30px; 
+}

@@ -1,0 +1,108 @@
+<ul class="pagination">
+  <li [ngClass]="{active : i.selected}" *ngFor="let i of pageResult1;let ind=index" (click)="getindex(ind)">
+    <a href="javascript:;">{{i.pagevalue}}</a>
+  </li>
+</ul>
+<br>
+
+<div class="container" *ngIf="rank==0 || rank=='' ">
+  <span>
+    <input type="text" placeholder="search here" [(ngModel)]="searchtext" (keyup)="search(searchtext,rank,$event)">
+    
+  </span>
+  <div>
+    <br>
+    <table class="table" class="table-bordered">
+      <thead>
+        <tr>
+          <th>Supplier Name</th>
+          <th>Location</th>
+          <th>Rate/Kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of supplierlist1">
+          <td>{{i.SupplierName}}</td>
+          <td>{{i.city}}</td>
+          <td>{{i.rate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container" *ngIf="rank==1">
+  <span>
+    <input type="text" placeholder="search here" [(ngModel)]="searchtext" (change)="search(searchtext,rank)">
+    
+  </span>
+  <div>
+    <br>
+    <table class="table" class="table-bordered">
+      <thead>
+        <tr>
+          <th>Supplier Name</th>
+          <th>Location</th>
+          <th>Rate/Kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of supplierlist1">
+          <td>{{i.SupplierName}}</td>
+          <td>{{i.city}}</td>
+          <td>{{i.rate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container" *ngIf="rank==2">
+  <span>
+    <input type="text" placeholder="search here" [(ngModel)]="searchtext" (change)="search(searchtext,rank)">
+
+  </span>
+  <div>
+    <br>
+    <table class="table" class="table-bordered">
+      <thead>
+        <tr>
+          <th>Supplier Name</th>
+          <th>Location</th>
+          <th>Rate/Kg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of supplierlist1">
+          <td>{{i.SupplierName}}</td>
+          <td>{{i.city}}</td>
+          <td>{{i.rate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container" *ngIf="rank==3">
+    <span>
+      <input type="text" placeholder="search here" [(ngModel)]="searchtext" (change)="search(searchtext,rank)">
+  
+    </span>
+    <div>
+      <br>
+      <table class="table" class="table-bordered">
+        <thead>
+          <tr>
+            <th>Supplier Name</th>
+            <th>Location</th>
+            <th>Rate/Kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of supplierlist1">
+            <td>{{i.SupplierName}}</td>
+            <td>{{i.city}}</td>
+            <td>{{i.rate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

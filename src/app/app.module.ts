@@ -13,7 +13,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DevelopmentComponent } from './development/development.component';
 import { RunningprojectComponent } from './runningproject/runningproject.component';
 import { DefaultformComponent } from './defaultform/defaultform.component';
-import {SendDataService} from './send-data.service'
+import {SendDataService} from './send-data.service';
+import { SupplierListComponent } from './supplier-list/supplier-list.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import {SendDataService} from './send-data.service'
     DashboardComponent,
     DevelopmentComponent,
     RunningprojectComponent,
-    DefaultformComponent
+    DefaultformComponent,
+    SupplierListComponent
   ],
   imports: [
     BrowserModule,FormsModule,HttpModule,
@@ -34,7 +36,13 @@ import {SendDataService} from './send-data.service'
         path:'runningproject',
         component:RunningprojectComponent
       },
-      { path: 'development/defaultform', component: DefaultformComponent },
+      { path: 'development/defaultform',
+       component: DefaultformComponent
+      },
+      {
+        path:'supplierList',
+        component:SupplierListComponent
+      },
     ])
   ],
   providers: [SendDataService],

@@ -1,20 +1,20 @@
 // import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { DefaultformComponent } from './defaultform.component';
+// import { SupplierListComponent } from './supplier-list.component';
 
-// describe('DefaultformComponent', () => {
-//   let component: DefaultformComponent;
-//   let fixture: ComponentFixture<DefaultformComponent>;
+// describe('SupplierListComponent', () => {
+//   let component: SupplierListComponent;
+//   let fixture: ComponentFixture<SupplierListComponent>;
 
 //   beforeEach(async(() => {
 //     TestBed.configureTestingModule({
-//       declarations: [ DefaultformComponent ]
+//       declarations: [ SupplierListComponent ]
 //     })
 //     .compileComponents();
 //   }));
 
 //   beforeEach(() => {
-//     fixture = TestBed.createComponent(DefaultformComponent);
+//     fixture = TestBed.createComponent(SupplierListComponent);
 //     component = fixture.componentInstance;
 //     fixture.detectChanges();
 //   });

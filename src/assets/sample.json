@@ -1,8 +1,67 @@
 
 
+[{
+     "SupplierName": "Bhushan",
+     "city": "Orissa",
+     "rate" : 40
+},
 {
-"project": "X104",
-"monthly Schedule" : 2200,
-"achieved qty":"1500",
-"Lagging qty":"700"
+    "SupplierName": "Sunflag" ,
+    "city":"Nagpur" ,
+    "rate" : 42 
+},
+{
+    "SupplierName": "Gerdau" ,
+    "city":"Banglore",
+    "rate" : 39  
+},
+{
+    "SupplierName": "Visa"  ,
+    "city":"Zharkhand" ,
+    "rate" : 40
+},
+{
+    "SupplierName": "UpperIndia",
+    "city":"uttarakhand"  ,
+    "rate" : 43 
+},
+{
+    "SupplierName": "poojaTech" ,
+    "city":"Pune"  ,
+    "rate" : 12
+},
+{
+    "SupplierName": "SwarajEnterprises" ,
+    "city":"Pune"  ,
+    "rate" : 12
+},
+{
+    "SupplierName": "MeenaElastomer"  ,
+    "city":"Nashik" ,
+    "rate" : 14
+},
+{
+    "SupplierName": "UshaEnterprises" ,
+    "city":"Mumbai" ,
+    "rate" : 41 
 }
+,
+{
+    "SupplierName": "Varroc" ,
+    "city":"Pune" ,
+    "rate" : 20 
+}
+,
+{
+    "SupplierName": "Vaasu" ,
+    "city":"UP" ,
+    "rate" : 38 
+}
+,
+{
+    "SupplierName": "VapulTechnology" ,
+    "city":"Delhi" ,
+    "rate" : 43 
+}
+]
+

@@ -17,14 +17,26 @@ export class SendDataService {
   };
 
   fetchdata() {
-    return this.http.get('http://localhost:3000/product/TATA').map(function(response) {
+    return this.http.get('http://localhost:3000/product/TATA')
+        .map(function(response) {
+          return response.json();
+        });
+  }
+
+  showdata() {
+    return this.http.get('http://localhost:3000/product/TATA/InitialData')
+        .map(function(response) {
+          return response.json();
+        });
+  }
+
+  supplierdata() {
+    return this.http.get('assets/sample.json').map(function(response) {
       return response.json();
     });
   }
 
-  showdata(){
-    return this.http.get('http://localhost:3000/product/TATA/InitialData').map(function(response) {
-      return response.json();
-    });
+  addition(firstNum : number, secondNum: number){
+    return firstNum + secondNum;
   }
 }
